@@ -1,0 +1,52 @@
+---
+layout: page
+title: About
+hide_title: true
+description: >-
+  Marios Papamichalis, Postdoctoral Associate at the Yale Institute for Network
+  Science. Statistical network analysis, measurement error in relational data,
+  causal inference under interference, and Bayesian latent variable models.
+---
+
+<p class="lede">
+  I am a statistician working on data about people who are connected to one another.
+  My research develops statistical and causal models for social networks, with
+  attention to settings where an intervention changes not only behaviour but the
+  social structure that sustains it.
+</p>
+
+<p>
+  I am a Postdoctoral Associate at the <a href="https://humannaturelab.net/" rel="noopener">Human Nature Lab</a>
+  and the Yale Institute for Network Science, working with Professor Nicholas A. Christakis
+  on large-scale sociocentric network studies and randomized interventions in rural
+  Honduras. I hold an MPhil and PhD in Statistics from University College London, and
+  I previously held a postdoctoral position at Purdue University with Professor
+  Patrick J. Wolfe. I collaborated with Professor Edoardo M. Airoldi.
+</p>
+
+<p>
+  My work runs along four connected lines: field studies of interventions in social
+  networks, measurement and measurement error in relational data, decision-theoretic
+  robustness for network models, and latent variable models with non-Euclidean geometry.
+  A fuller account is on the <a href="{{ '/research/' | relative_url }}">research</a> page.
+</p>
+
+<h2>News</h2>
+
+<ul class="news">
+  {% for item in site.data.news limit: 6 %}
+  <li>
+    <span class="news-date">{{ item.date }}</span>
+    <p class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Selected work</h2>
+
+<p class="section-note">The full list is on the <a href="{{ '/publications/' | relative_url }}">publications</a> page.</p>
+
+{% assign featured = site.data.publications.published | where: "featured", true %}
+{% assign featured_review = site.data.publications.review | where: "featured", true %}
+{% assign selected = featured | concat: featured_review %}
+{% include pub-list.html items=selected %}

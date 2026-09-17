@@ -1,0 +1,91 @@
+# Conference and workshop presentations. Newest first.
+- event: "Joint Statistical Meetings (JSM) 2025"
+  year: 2025
+  where: "Nashville, TN"
+  when: "August 2-7, 2025"
+  theme: "Statistics, Data Science, and AI Enriching Society"
+  items:
+    - kind: Poster
+      title: "Wavelet Latent Position Exponential Random Graphs"
+      authors: "M. Papamichalis, R. Ruane"
+
+- event: "Sunbelt 2025, International Network for Social Network Analysis"
+  year: 2025
+  where: "Paris, France"
+  when: "June-July 2025"
+  items:
+    - kind: Paper
+      title: "Forgetting Friends and Foes: Self-Reported Errors in Sociocentrically Mapped Village Networks"
+      authors: "with A. L. Rodríguez de la Rosa, K. Raygoza-Cortez, N. A. Christakis"
+    - kind: Paper
+      title: "The Association of Friends and Family Social Networks on Wife-Beating Beliefs in Rural Honduras"
+      authors: "with A. K. Raygoza-Cortez, W. Williams-Ceci, N. A. Christakis, R. Cardenas Heredia, A. L. Rodríguez de la Rosa"
+
+- event: "Novel AI & Data for Disaster Management Workshop"
+  year: 2025
+  where: "Philadelphia, PA"
+  when: "July 31, 2025"
+  theme: "Hosted by the Computational Social Science Lab, University of Pennsylvania, with Meta AI for Good and Direct Relief's CrisisReady initiative"
+  items:
+    - kind: Paper
+      title: "Group Cooperation Diverges onto Durable Low versus High Paths: Public Goods Experiments in 134 Honduran Villages"
+      authors: "with N. A. Christakis, F. Fu"
+
+- event: "Joint Statistical Meetings (JSM) 2024"
+  year: 2024
+  where: "Portland, OR"
+  when: "August 3-8, 2024"
+  theme: "Statistics and Data Science: Informing Policy and Countering Misinformation"
+  items:
+    - kind: Poster
+      title: "Decision-Theoretic Robustness for Network Models"
+      authors: "M. Papamichalis, R. Ruane, S. Lunagómez, S. Chandna"
+
+- event: "Joint Statistical Meetings (JSM) 2023"
+  year: 2023
+  where: "Toronto, ON, Canada"
+  when: "August 5-10, 2023"
+  theme: "One Community: Informing Decisions and Driving Discovery"
+  items:
+    - kind: Poster
+      title: "State-Space Modeling of Time-Varying Spillovers on Networks"
+      authors: "M. Papamichalis, R. Ruane"
+
+- event: "Joint Statistical Meetings (JSM) 2022"
+  year: 2022
+  where: "Washington, DC"
+  when: "August 6-11, 2022"
+  theme: "Statistics: A Foundation for Innovation"
+  items:
+    - kind: Poster
+      title: "Graphon-Level Bayesian Predictive Synthesis for Random Networks"
+      authors: "M. Papamichalis, R. Ruane"
+
+- event: "Workshop on the Frontiers in Data Science"
+  year: 2020
+  where: "Keio University, Tokyo, Japan"
+  when: "January 2020"
+  items:
+    - kind: Paper
+      title: "Collapsed Structured Block Models for Community Detection in Complex Networks"
+      authors: "M. Papamichalis, R. Ruane"
+
+- event: "Joint Statistical Meetings (JSM) 2019"
+  year: 2019
+  where: "Denver, CO"
+  when: "July 27 - August 1, 2019"
+  theme: "Statistics: Making an Impact"
+  items:
+    - kind: Poster
+      title: "CoLaS: Copula-Seeded Sparse Local Graphs with Tunable Assortativity, Persistent Clustering, and a Degree-Tail Dichotomy"
+      authors: "M. Papamichalis, R. Ruane, T. Papamichalis"
+
+- event: "International Conference on Scientific and Statistical Database Management (SSDBM)"
+  year: 2012
+  where: "Chania, Crete, Greece"
+  when: "June 25-27, 2012"
+  theme: "Best Paper Award"
+  items:
+    - kind: Paper
+      title: "Probabilistic Range Monitoring of Streaming Uncertain Positions in Geosocial Networks"
+      authors: "K. Patroumpas, M. Papamichalis, T. Sellis"

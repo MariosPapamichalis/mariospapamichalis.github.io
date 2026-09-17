@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------------------
+# Site settings. Edit the values in this block and nothing else needs to change.
+# ---------------------------------------------------------------------------
+
+name:        Marios Papamichalis
+tagline:     Postdoctoral Associate, Yale Institute for Network Science
+title:       Marios Papamichalis
+description: >-
+  Marios Papamichalis is a statistician at Yale working on statistical network
+  analysis, measurement error in relational data, causal inference under
+  interference, and Bayesian latent variable models.
+
+# The public address of the site. For a user site the URL is
+# https://<your-github-username>.github.io and baseurl must stay empty.
+url:     "https://mariospapamichalis.github.io"
+baseurl: ""
+
+# Research interests, shown in the sidebar on every page.
+# Remove the url to render a plain label with no link.
+interests:
+  - label: Statistics
+    url: "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:statistics"
+  - label: Networks
+    url: "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:networks"
+  - label: Causal Inference
+    url: "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:causal_inference"
+  - label: Deep Learning
+    url: "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:deep_learning"
+
+# Contact block and icon links in the sidebar and footer.
+author:
+  name:     Marios Papamichalis
+  email:    marios.papamichalis@yale.edu
+  phone:    "+1 (215) 667-3969"
+  location: "Philadelphia, PA"
+  affiliation: Yale Institute for Network Science
+  photo:    /images/profile.jpg
+  cv:       /files/CV_Papamichalis.pdf
+  scholar:  "https://scholar.google.com/citations?hl=en&user=W4nBRr8AAAAJ"
+  github:   "https://github.com/MariosPapamichalis"
+  orcid:    ""          # e.g. https://orcid.org/0000-0000-0000-0000
+  arxiv:    "https://arxiv.org/a/papamichalis_m_1"
+  linkedin: ""
+  twitter:  ""
+
+# ---------------------------------------------------------------------------
+# Build settings. You rarely need to touch anything below this line.
+# ---------------------------------------------------------------------------
+
+markdown:    kramdown
+highlighter: rouge
+permalink:   /news/:year/:month/:title/
+timezone:    America/New_York
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github
+  - Makefile

@@ -1,0 +1,45 @@
+<aside class="sidebar">
+  <div class="sidebar-inner">
+
+    <a class="identity" href="{{ '/' | relative_url }}">
+      <img class="portrait" src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" width="150" height="150">
+      <span class="identity-name">{{ site.name }}</span>
+    </a>
+    <p class="identity-role">{{ site.tagline }}</p>
+
+    {% if site.interests %}
+    <p class="interests">
+      {% for i in site.interests %}<span class="interest">{% if i.url %}<a href="{{ i.url }}" rel="noopener">{{ i.label }}</a>{% else %}{{ i.label }}{% endif %}{% unless forloop.last %}<span class="sep">&middot;</span>{% endunless %}</span> {% endfor %}
+    </p>
+    {% endif %}
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        {% for item in site.data.menu %}
+        {% assign here = page.url | remove: 'index.html' %}
+        <li><a href="{{ item.url | relative_url }}"{% if here == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="contact">
+      {% if site.author.affiliation %}<p class="contact-line">{{ site.author.affiliation }}</p>{% endif %}
+      {% if site.author.location %}<p class="contact-line">{{ site.author.location }}</p>{% endif %}
+      {% if site.author.email %}<p class="contact-line"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>{% endif %}
+    </div>
+
+    <ul class="profiles">
+      {% if site.author.cv %}<li><a href="{{ site.author.cv | relative_url }}">CV (PDF)</a></li>{% endif %}
+      {% if site.author.scholar %}<li><a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a></li>{% endif %}
+      {% comment %}
+        arXiv is deliberately not listed in this sidebar. It still appears on the
+        publications page. To bring it back here, add an "if" tag on site.author.arxiv
+        wrapping a list item that links to it, matching the pattern of the lines above.
+      {% endcomment %}
+      {% if site.author.github %}<li><a href="{{ site.author.github }}" rel="noopener">GitHub</a></li>{% endif %}
+      {% if site.author.orcid != "" %}<li><a href="{{ site.author.orcid }}" rel="noopener">ORCID</a></li>{% endif %}
+      {% if site.author.linkedin != "" %}<li><a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a></li>{% endif %}
+    </ul>
+
+  </div>
+</aside>

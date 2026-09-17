@@ -1,0 +1,314 @@
+// ---------------------------------------------------------------------------
+// Page furniture, prose, publication lists, news, talks, teaching
+// ---------------------------------------------------------------------------
+
+.page-head { margin-bottom: 2rem; }
+
+.page-title {
+  font-size: 2.05rem;
+  margin: 0;
+}
+
+.page-subtitle {
+  font-family: $sans;
+  font-size: .95rem;
+  color: var(--ink-faint);
+  margin: .5rem 0 0;
+  max-width: 34rem;
+}
+
+.prose {
+  > h2:first-child { margin-top: 0; }
+
+  h2 {
+    font-size: 1.28rem;
+    padding-bottom: .35rem;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  blockquote {
+    margin: 1.6rem 0;
+    padding-left: 1.1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  ul, ol { padding-left: 1.2rem; }
+  li { margin-bottom: .35em; }
+}
+
+// --- intro block on the homepage -----------------------------------------
+
+.lede {
+  font-size: 1.18rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: 1.4rem;
+}
+
+// --- news -----------------------------------------------------------------
+
+.news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: .95rem;
+
+  li {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: .9rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--rule-soft);
+    margin: 0;
+  }
+  li:last-child { border-bottom: 0; }
+
+  .news-date {
+    font-family: $sans;
+    font-size: .78rem;
+    color: var(--ink-faint);
+    padding-top: .22rem;
+    white-space: nowrap;
+  }
+  .news-text { margin: 0; }
+}
+
+@media (max-width: 34rem) {
+  .news li { grid-template-columns: 1fr; gap: .1rem; }
+}
+
+// --- publications ---------------------------------------------------------
+
+.pubs {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+  counter-reset: none;
+}
+
+.pub {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  margin: 0;
+  &:last-child { border-bottom: 0; }
+}
+
+.pub-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.pub-title {
+  font-size: 1.04rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+  flex: 1;
+}
+
+.pub-year {
+  font-family: $sans;
+  font-size: .78rem;
+  color: var(--ink-faint);
+  flex: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-authors {
+  font-size: .9rem;
+  color: var(--ink-soft);
+  margin: .28rem 0 .18rem;
+  strong { color: var(--ink); font-weight: 600; }
+}
+
+.pub-meta {
+  font-family: $sans;
+  font-size: .82rem;
+  color: var(--ink-faint);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem;
+
+  cite { font-family: $serif; font-size: .92rem; font-style: italic; color: var(--ink-soft); }
+}
+
+.tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-ink);
+  font-size: .71rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: .12rem .45rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.tag-award { background: var(--award-bg); color: var(--award-ink); }
+
+.pub-links {
+  font-family: $sans;
+  font-size: .82rem;
+  margin: .35rem 0 0;
+  .sep { color: var(--ink-faint); margin: 0 .3rem; }
+}
+
+.pub-abstract {
+  margin-top: .5rem;
+  font-size: .92rem;
+
+  summary {
+    font-family: $sans;
+    font-size: .8rem;
+    color: var(--ink-faint);
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    user-select: none;
+    &::-webkit-details-marker { display: none; }
+    &::before { content: "+ "; }
+    &:hover { color: var(--accent); }
+  }
+  &[open] summary::before { content: "\2212 "; }
+
+  p {
+    margin: .55rem 0 0;
+    padding-left: .9rem;
+    border-left: 2px solid var(--rule);
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+}
+
+// --- talks ----------------------------------------------------------------
+
+.talks { list-style: none; margin: 0; padding: 0; }
+
+.talk {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  margin: 0;
+  &:last-child { border-bottom: 0; }
+}
+
+.talk-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.talk-event { font-size: 1.02rem; font-weight: 600; margin: 0; flex: 1; }
+.talk-year  { font-family: $sans; font-size: .78rem; color: var(--ink-faint); flex: none; }
+
+.talk-where {
+  font-family: $sans;
+  font-size: .82rem;
+  color: var(--ink-faint);
+  margin: .2rem 0 .4rem;
+}
+
+.talk-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: .92rem;
+
+  li { margin: 0 0 .35rem; padding-left: .9rem; border-left: 2px solid var(--rule); }
+  .kind {
+    font-family: $sans;
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    color: var(--ink-faint);
+    margin-right: .35rem;
+  }
+  .talk-authors { color: var(--ink-faint); font-size: .86rem; }
+}
+
+// --- teaching -------------------------------------------------------------
+
+.courses { list-style: none; margin: 0; padding: 0; }
+
+.course {
+  padding: .95rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  margin: 0;
+  &:last-child { border-bottom: 0; }
+
+  .course-head {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .course-name { font-size: 1rem; font-weight: 600; margin: 0; flex: 1; }
+  .course-when { font-family: $sans; font-size: .78rem; color: var(--ink-faint); flex: none; }
+  .course-role { font-family: $sans; font-size: .8rem; color: var(--ink-faint); margin: .15rem 0 0; }
+  .course-detail { font-size: .92rem; color: var(--ink-soft); margin: .35rem 0 0; }
+}
+
+// --- CV page --------------------------------------------------------------
+
+.pdf-frame {
+  width: 100%;
+  height: 46rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+  margin: 1.5rem 0;
+}
+
+@media (max-width: $bp-lap) {
+  .pdf-frame { height: 32rem; }
+}
+
+.button {
+  display: inline-block;
+  font-family: $sans;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .5rem .95rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--ink);
+  background: var(--surface);
+  margin-right: .5rem;
+  &:hover { border-color: var(--accent); color: var(--accent); }
+}
+
+// --- misc -----------------------------------------------------------------
+
+.section-note {
+  font-family: $sans;
+  font-size: .85rem;
+  color: var(--ink-faint);
+  margin: -.4rem 0 1.1rem;
+}
+
+.post-date {
+  font-family: $sans;
+  font-size: .8rem;
+  color: var(--ink-faint);
+  margin: 0 0 .4rem;
+}
+
+.back { font-family: $sans; font-size: .85rem; margin-top: 2.5rem; }
+
+.archive { list-style: none; margin: 0; padding: 0; }
+.archive li {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: .45rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  margin: 0;
+}
+.archive .archive-date { font-family: $sans; font-size: .8rem; color: var(--ink-faint); }
