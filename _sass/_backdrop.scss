@@ -1,0 +1,95 @@
+// ---------------------------------------------------------------------------
+// Decorative backdrop: a soft colour wash plus a drifting layered network.
+//
+// Everything in this file sits behind the content and is purely atmospheric.
+// Deleting the @import in css/main.scss and the two lines in
+// _layouts/default.html returns the site to a plain background.
+// ---------------------------------------------------------------------------
+
+:root {
+  // Network drawing colours, read by js/backdrop.js so the canvas follows
+  // the stylesheet rather than hard-coding its own palette.
+  --net-node:   rgba( 29,  63,  99, .70);
+  --net-edge:   rgba( 41,  84, 126, .40);
+  --net-pulse:  rgba(176, 125,  46, .92);
+
+  // How strongly the network is held back behind the reading column.
+  // 0 = network drawn at full strength everywhere, 1 = erased behind text.
+  --net-recess: .74;
+
+  // Overall strength of the canvas.
+  --net-opacity: .60;
+
+  // The colour wash behind everything.
+  --wash:
+    radial-gradient(58rem 42rem at  8% -12%, rgba( 29,  63,  99, .105), transparent 62%),
+    radial-gradient(50rem 36rem at 96%   0%, rgba( 56, 116, 158, .090), transparent 64%),
+    radial-gradient(46rem 40rem at 82%  98%, rgba(108,  86, 146, .070), transparent 62%),
+    radial-gradient(36rem 30rem at  2%  84%, rgba(176, 125,  46, .055), transparent 60%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --net-node:   rgba(150, 189, 225, .74);
+    --net-edge:   rgba(120, 160, 198, .34);
+    --net-pulse:  rgba(216, 189, 131, .94);
+
+    --net-recess: .78;
+    --net-opacity: .46;
+
+    --wash:
+      radial-gradient(58rem 42rem at  8% -12%, rgba( 62, 116, 168, .155), transparent 62%),
+      radial-gradient(50rem 36rem at 96%   0%, rgba( 44,  96, 138, .130), transparent 64%),
+      radial-gradient(46rem 40rem at 82%  98%, rgba(104,  84, 146, .110), transparent 62%),
+      radial-gradient(36rem 30rem at  2%  84%, rgba(150, 110,  50, .070), transparent 60%);
+  }
+}
+
+// The page background now lives on <html> so that the two decorative layers
+// below can be painted above it with a negative z-index.
+html { background: var(--paper); }
+
+body {
+  background: transparent;
+  position: relative;
+}
+
+// Layer 1 — the colour wash.
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: var(--wash);
+}
+
+// Layer 2 — the network canvas.
+#backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: var(--net-opacity);
+}
+
+// Visitors who ask for less motion keep the artwork, minus the movement.
+@media (prefers-reduced-motion: reduce) {
+  :root { --net-opacity: .40; }
+}
+
+// On small screens the reading column fills the width, so the network is
+// dialled back further and the wash carries the atmosphere on its own.
+@media (max-width: $bp-lap) {
+  :root {
+    --net-opacity: .34;
+    --net-recess:  .82;
+  }
+}
+
+// If a browser cannot run the script, nothing is drawn and the wash alone
+// remains — which is still a finished-looking page.
+.no-js #backdrop { display: none; }

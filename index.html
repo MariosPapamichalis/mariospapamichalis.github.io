@@ -1,0 +1,102 @@
+---
+layout: page
+title: About
+hide_title: true
+description: >-
+  Marios Papamichalis, Postdoctoral Associate at the Yale Institute for Network
+  Science. Statistical network analysis, measurement error in relational data,
+  causal inference under interference, and Bayesian latent variable models.
+---
+
+<p class="lede">
+  I am a statistician and data scientist working on two questions about complex
+  systems: how their structure should be measured, and what happens when we
+  intervene on them. In social networks, this means modelling how people are
+  connected and showing that an intervention can change not only behaviour but
+  also the ties that sustain it. In large language models, it means analysing
+  the statistical properties of attention and token distributions, and showing
+  that removing one component can change what the others do. I develop
+  statistical and causal methods for both settings, built on the same
+  principles of structure, dependence, and intervention.
+</p>
+
+<p>
+  I am a Postdoctoral Associate/Researcher at the Yale Institute for Network Science and the
+  <a href="https://humannaturelab.net/" rel="noopener">Human Nature Lab</a>,
+  where I work with Professor Nicholas A. Christakis on large-scale sociocentric
+  network studies and randomized field interventions in rural Honduras. Before
+  Yale, I was a postdoctoral researcher at Purdue University with Professor
+  Patrick J. Wolfe, and I have collaborated with Professor Edoardo M. Airoldi.
+  I hold an MPhil and a PhD in Statistics from University College London and and MEng and BS for the National Technical University of Athens.
+</p>
+
+<h2>References</h2>
+
+<p>
+  My references are Professor Nicholas A. Christakis (Yale University),
+  Professor Edoardo M. Airoldi (Temple University), Professor Laura Forastiere
+  (Yale University), Professor Patrick J. Wolfe (Purdue University), Professor
+  Feng Fu (Dartmouth College), Professor Alex Beskos (University College London),
+  <a href="https://www.simonlunagomezc.com/" rel="noopener">Professor Simón Lunagómez</a>
+  (ITAM), and Professor Timos Sellis (National Technical University of Athens),
+  together with John Leone, Managing Director and Head of Prime Platform for
+  Market Makers at Citi, formerly Managing Director and Head of Quantitative
+  Strategy at Wells Fargo. Contact details are available on request.
+</p>
+
+<h2>Research</h2>
+
+<p>My work combines field data at scale with new statistical methodology, along four connected lines:</p>
+
+<ul>
+  <li><strong>Interventions in social networks</strong>: how randomized programmes spread through, and reshape, the ties between people.</li>
+  <li><strong>Measurement in relational data</strong>: how reporting error and missing ties distort what we learn from network surveys, and how to correct for it.</li>
+  <li><strong>Robust network modelling</strong>: decision-theoretic approaches that keep inference reliable when models are misspecified.</li>
+  <li><strong>Latent variable models</strong>: Bayesian models with non-Euclidean latent geometry for complex network structure.</li>
+</ul>
+
+<p>Recent and ongoing projects include:</p>
+
+<h3>Statistical and causal methods for social networks</h3>
+
+<ul>
+  <li>Evaluating how a randomized health-education intervention rewired health-advice, friendship, and financial ties (<em>Nature</em>, 2026).</li>
+  <li>Showing that cooperation in village public-goods games stabilizes near half the endowment under a moderate peer effect, with persistent group differences driven by composition rather than responsiveness.</li>  <li>Linking signed (positive and negative) network structure to anxiety, depression, and beliefs about the acceptability of wife beating.</li>
+  <li>Showing that social and financial ties are disproportionately directed toward physically larger people.</li>
+  <li>Mapping the spatial structure of friendly and antagonistic ties across 175 villages.</li>
+  <li>Quantifying assortativity and network change across two waves of multiplex data in 176 villages.</li>
+  <li>Measuring reporting error, or "forgotten ties", in network data collection.</li>
+</ul>
+
+<h3>Statistical and causal methods for identifying properties of large language models</h3>
+
+<ul>
+  <li>Treating attention rows as compositional data, showing that standard attention metrics flip 17–47% of head-similarity verdicts depending on how the attention sink is handled, and separating sink from content with Aitchison geometry.</li> 
+  <li>Decomposing chain-of-thought entropy into scaffolding, routing, and content channels, and showing that restated answers inflate standard evaluations of chain-of-thought compression.</li>
+  <li>Treating component ablation in transformers as a designed factorial experiment, showing that one-at-a-time ablation cannot identify a component's effect once its collaborators are removed, and that 6 of the 17 influential heads in the published GPT-2 indirect-object circuit change sign when their collaborators are removed.</li>
+  <li>Developing support-safe variational filtering for hybrid dynamical systems, which keeps learned proposals from discarding feasible regimes and enables sparse recovery of physical laws (NeurIPS, 2026).</li>
+</ul>
+
+<p>
+  More detail is on the <a href="{{ '/research/' | relative_url }}">research</a> page.
+</p>
+
+<h2>News</h2>
+
+<ul class="news">
+  {% for item in site.data.news limit: 6 %}
+  <li>
+    <span class="news-date">{{ item.date }}</span>
+    <p class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Selected work</h2>
+
+<p class="section-note">The full list is on the <a href="{{ '/publications/' | relative_url }}">publications</a> page.</p>
+
+{% assign featured = site.data.publications.published | where: "featured", true %}
+{% assign featured_review = site.data.publications.review | where: "featured", true %}
+{% assign selected = featured | concat: featured_review %}
+{% include pub-list.html items=selected %}

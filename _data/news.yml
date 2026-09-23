@@ -1,0 +1,16 @@
+# Short news items for the homepage. Newest first. Keep to one line each.
+# Delete an item when it stops being news.
+- date: "Sep 2026"
+  text: "\"Educational Intervention Can Rewire Village Social Networks\" is accepted at *Nature*."
+
+- date: "Sep 2026"
+  text: "\"Support-Safe Variational Hybrid Filtering\" is accepted at *NeurIPS*."
+
+- date: "Jul 2026"
+  text: "Second-round revision invited at *JASA* for the Bayesian predictive synthesis paper."
+
+- date: "Jun 2026"
+  text: "The depression and village-network study appears in *BMJ Open*."
+
+- date: "Aug 2025"
+  text: "Poster at JSM 2025 in Nashville on wavelet latent position exponential random graphs."

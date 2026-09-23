@@ -1,0 +1,13 @@
+# Site navigation. Reorder, add or delete entries here and every page updates.
+- title: About
+  url: /
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Talks
+  url: /talks/
+- title: Teaching
+  url: /teaching/
+- title: CV
+  url: /cv/

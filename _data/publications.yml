@@ -1,0 +1,165 @@
+# ---------------------------------------------------------------------------
+# All publications live here. To add a paper, copy an entry and edit it.
+#
+#   title:    the paper title, in quotes
+#   authors:  full author list in order, comma separated. Your own name is
+#             bolded automatically wherever it appears.
+#   year:     used for sorting and for the year shown on the right
+#   venue:    journal or conference name, italicised on the page
+#   status:   optional. "Accepted", "Under revision, 2nd R&R", "Under review"
+#   note:     optional. Volume, pages, awards
+#   abstract: optional. Shown behind a toggle
+#   featured: optional. true puts the paper in the Selected list on the homepage
+#   links:    optional list of {label, url}
+# ---------------------------------------------------------------------------
+
+published:
+  - title: "Educational Intervention Can Rewire Village Social Networks"
+    authors: "Marios Papamichalis, Laura Forastiere, Edoardo M. Airoldi, Nicholas A. Christakis"
+    year: 2026
+    venue: "Nature"
+    status: "Accepted"
+    featured: true
+    abstract: >
+      Using a two-stage randomized public-health intervention in 110 remote Honduran
+      villages (8,331 individuals), we quantify how an informational intervention alters
+      pre-existing sociocentric networks. In low-dosage villages, treated individuals tend
+      to sever health-advice ties with untreated alters, while in high-dosage villages
+      treated individuals increase both inbound and outbound ties. The intervention also
+      affects friendship and financial ties, indicating multiplex spillovers, yet
+      aggregate village-level structure changes only modestly.
+
+  - title: "Support-Safe Variational Hybrid Filtering for Contact-Mode and Sparse-Law Recovery"
+    authors: "Marios Papamichalis, Regina Ruane"
+    year: 2026
+    venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+    status: "Accepted"
+    featured: true
+    links:
+      - label: "arXiv:2605.16398"
+        url: "https://arxiv.org/abs/2605.16398"
+
+  - title: "Social Network Structure and Depression by Gender in Rural Honduras: A Cross-Sectional Study"
+    authors: "Selena T. Lee, Marios Papamichalis, Karina Raygoza-Cortez, Nicholas A. Christakis, Ana Lucia Rodríguez de la Rosa"
+    year: 2026
+    venue: "BMJ Open"
+    note: "16(6), e108285"
+
+  - title: "Probabilistic Range Monitoring of Streaming Uncertain Positions in Geosocial Networks"
+    authors: "Kostas Patroumpas, Marios Papamichalis, Timos Sellis"
+    year: 2012
+    venue: "Proceedings of SSDBM 2012"
+    note: "24th International Conference on Scientific and Statistical Database Management"
+    award: "Best Paper Award"
+
+review:
+  - title: "Bayesian Predictive Synthesis for Dynamic Networks: Forecasting and Identifying Structural Mechanisms"
+    authors: "Marios Papamichalis, Regina Ruane, Theofanis Papamichalis"
+    year: 2026
+    venue: "Journal of the American Statistical Association"
+    status: "Under revision, 2nd R&R"
+    featured: true
+    abstract: >
+      We combine competing generative models for dynamic networks through a predictive
+      synthesis framework defined at the level of the graphon, so that forecasts are
+      calibrated and the weights assigned to component models are interpretable as
+      evidence for competing structural mechanisms of tie formation and dissolution.
+    links:
+      - label: "arXiv:2606.26136"
+        url: "https://arxiv.org/abs/2606.26136"
+
+  - title: "Clustering Network Formation in Populations of Networks"
+    authors: "Marios Papamichalis, Nicholas A. Christakis, Laura Forastiere"
+    year: 2026
+    venue: "Annals of Applied Statistics"
+    status: "Under revision, 1st R&R"
+    featured: true
+    abstract: >
+      We study inference for populations of networks with different node sets and sizes,
+      where subsets of networks may share distinct formation regimes. Each observed
+      network is modeled as a noisy snapshot of an underlying network, and networks are
+      clustered jointly by a strategic formation mechanism and a measurement-error
+      profile. We build a likelihood from a single snapshot using a meeting-and-revision
+      equilibrium, with a finite-horizon alternative, and develop parallelizable Bayesian
+      inference via block-updated MCMC with exchange-type updates.
+
+  - title: "Decision-Theoretic Robustness for Network Models"
+    authors: "Marios Papamichalis, Regina Ruane, Swati Chandna, Simón Lunagómez"
+    year: 2026
+    venue: "Journal of Machine Learning Research"
+    status: "Under revision"
+    featured: true
+    abstract: >
+      We develop a decision-theoretic notion of robustness for Bayesian network analysis
+      by allowing the posterior to vary within a small Kullback-Leibler neighborhood. For
+      exchangeable graphs, we connect robust posterior risk to graphon limits, yielding
+      tractable sensitivity expansions for losses based on network functionals. We propose
+      a practical computation via exponential tilting of posterior draws and illustrate the
+      approach on brain-connectivity and village-network data.
+
+  - title: "Deep Description of Static and Dynamic Network Ties in Honduran Villages"
+    authors: "Marios Papamichalis, Nikolaos Nakis, Nicholas A. Christakis"
+    year: 2026
+    venue: "Journal of Complex Networks"
+    status: "Under revision, R&R"
+
+  - title: "Network Changes in Rural Honduras: Educational Intervention via Strategic Targeting"
+    authors: "Marios Papamichalis, Laura Forastiere, Edoardo M. Airoldi, Nicholas A. Christakis"
+    year: 2026
+    venue: "Journal of Complex Networks"
+    status: "Under review"
+
+  - title: "Spatial Structure of Friendly and Antagonistic Ties in Honduran Villages"
+    authors: "Marios Papamichalis, Margaret L. Traeger, Nicholas A. Christakis"
+    year: 2026
+    venue: "Journal of Complex Networks"
+    status: "Under review"
+
+  - title: "Social Factors Associated with Generalized Anxiety Disorder in Honduran Villages"
+    authors: "Marios Papamichalis, Ana Lucia Rodríguez de la Rosa, Nicholas A. Christakis"
+    year: 2026
+    venue: "BMJ Open"
+    status: "Under review"
+
+working:
+  - title: "Group Cooperation Diverges onto Durable Low versus High Paths: Public Goods Experiments in 134 Honduran Villages"
+    authors: "Marios Papamichalis, Nicholas A. Christakis, Feng Fu"
+    year: 2026
+    abstract: >
+      We report a large lab-in-the-field public-goods experiment with 2,591 participants
+      across 134 Honduran villages. Contribution trajectories split early into two
+      persistent regimes, low and high, with little subsequent convergence. Groups with an
+      early majority of above-norm contributors are much more likely to end in the
+      high-cooperation regime, and early high contributions by socially central individuals
+      help steer groups onto that path and keep them on it.
+
+  - title: "Latent Space Network Modelling with Hyperbolic and Spherical Geometries"
+    authors: "Marios Papamichalis, Kathryn Turnbull, Simón Lunagómez, Edoardo M. Airoldi"
+    year: 2026
+    abstract: >
+      We propose latent space network models in hyperbolic and spherical geometries to
+      capture non-Euclidean structure in relational data. We address identifiability by
+      characterizing which latent representations are recoverable from observed links and
+      by imposing constraints that resolve non-identifiability. We develop Bayesian
+      estimation procedures, both MCMC and variational, tailored to each geometry, and
+      evaluate the models on real networks.
+
+  - title: "Invariant Distributions on Riemannian Manifolds for Variational Autoencoders"
+    authors: "Marios Papamichalis, Simón Lunagómez, Edoardo M. Airoldi, Regina Ruane"
+    abstract: >
+      A general framework for wrapped distributions on homogeneous Riemannian manifolds,
+      built from area-preserving maps and isometries, together with radial compensation
+      distributions that decouple curvature from parameter semantics in manifold-based
+      generative models.
+
+  - title: "Forgetting Friends and Foes: Self-Reported Errors in Sociocentrically Mapped Village Networks"
+    authors: "Marios Papamichalis, Ana Lucia Rodríguez de la Rosa, Karina Raygoza-Cortez, Nicholas A. Christakis"
+
+  - title: "The Association of Friends and Family Social Networks on Wife-Beating Beliefs in Rural Honduras"
+    authors: "Marios Papamichalis, Ana Karina Raygoza-Cortez, Wynne Williams-Ceci, Nicholas A. Christakis, Rafael Cardenas Heredia, Ana Lucia Rodríguez de la Rosa"
+
+  - title: "DeFi Statistical Network Analysis (Ethereum and On-Chain Networks)"
+    authors: "Marios Papamichalis, Leandros Tassiulas, and collaborators, Yale University"
+    abstract: >
+      Comparative study of network evolution, structural breaks, and fragility across DeFi
+      protocols and market regimes.

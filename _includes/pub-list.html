@@ -1,0 +1,37 @@
+{% comment %}
+  Renders one list of publications.
+  Usage: {% include pub-list.html items=site.data.publications.published %}
+{% endcomment %}
+<ol class="pubs">
+  {% for pub in include.items %}
+  <li class="pub">
+    <div class="pub-head">
+      <h3 class="pub-title">{{ pub.title }}</h3>
+      {% if pub.year %}<span class="pub-year">{{ pub.year }}</span>{% endif %}
+    </div>
+
+    {% capture selfbold %}<strong>{{ site.name }}</strong>{% endcapture %}
+    <p class="pub-authors">{{ pub.authors | replace: site.name, selfbold }}</p>
+
+    <p class="pub-meta">
+      {% if pub.status %}<span class="tag">{{ pub.status }}</span>{% endif %}
+      {% if pub.venue %}<cite>{{ pub.venue }}</cite>{% endif %}
+      {% if pub.note %}<span class="pub-note">{{ pub.note }}</span>{% endif %}
+      {% if pub.award %}<span class="tag tag-award">{{ pub.award }}</span>{% endif %}
+    </p>
+
+    {% if pub.links %}
+    <p class="pub-links">
+      {% for l in pub.links %}<a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% unless forloop.last %}<span class="sep">·</span>{% endunless %}{% endfor %}
+    </p>
+    {% endif %}
+
+    {% if pub.abstract %}
+    <details class="pub-abstract">
+      <summary>Abstract</summary>
+      <p>{{ pub.abstract | strip_newlines }}</p>
+    </details>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>

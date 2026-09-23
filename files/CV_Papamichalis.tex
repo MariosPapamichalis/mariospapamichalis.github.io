@@ -1,0 +1,365 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Marios Papamichalis - Academic CV
+% Requires resume.cls (included in this project folder).
+% Compile with pdfLaTeX.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage[left=0.7in,top=0.6in,right=0.7in,bottom=0.7in]{geometry}
+\usepackage{times}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+% fontawesome is available on Overleaf; fall back gracefully if it is not.
+\IfFileExists{fontawesome.sty}{\usepackage{fontawesome}}{}
+\IfFileExists{marvosym.sty}{\usepackage{marvosym}}{}
+\providecommand{\faMapMarker}{}
+\providecommand{\faPhone}{}
+\providecommand{\faEnvelope}{}
+\providecommand{\faGlobe}{}
+\providecommand{\faGithub}{\textbf{GitHub}}
+\providecommand{\Telefon}{Tel.}
+\providecommand{\Letter}{E-mail:}
+
+\definecolor{burgundy}{RGB}{128,0,32}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=burgundy,
+  urlcolor=burgundy,
+  citecolor=burgundy,
+  pdftitle={Marios Papamichalis - Curriculum Vitae},
+  pdfauthor={Marios Papamichalis}
+}
+
+\newcommand*{\myhref}[2]{\href{#1}{#2}}
+\newcommand{\pubtitle}[1]{\textbf{``#1''}}
+
+%-------------------------
+% Header
+%-------------------------
+\name{Marios Papamichalis}
+
+\address{\faMapMarker\ 30 N 23rd Street, Philadelphia, PA 19103, USA \quad \faPhone\ +1 (215) 667-3969 \quad \textbf{U.S. Permanent Resident}}
+\address{\faEnvelope\ \href{mailto:marios.papamichalis@yale.edu}{marios.papamichalis@yale.edu}
+\quad \faGlobe\ \myhref{https://scholar.google.com/citations?hl=en&user=W4nBRr8AAAAJ}{Google Scholar}
+\quad \faGithub\ \myhref{https://github.com/MariosPapamix}{github.com/MariosPapamix}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interests}
+Statistical Network Analysis; Measurement and Measurement Error in Relational Data; Causal Inference under Interference; Bayesian Statistics; Machine Learning and Deep Learning.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Academic Appointments}
+{\bf Yale University, Human Nature Lab / Yale Institute for Network Science} \hfill {\em Sep.\ 2021 -- present}\\
+\textit{Postdoctoral Associate, Research Fellow and Affiliated Researcher. Supervisor: Prof.\ Nicholas A.\ Christakis}\\
+{\small Large-scale sociocentric network studies and randomized interventions in rural Honduras, causal inference for network interventions, statistical modeling of multiplex and signed networks.}
+
+{\bf Temple University} \hfill {\em Sep.\ 2020 -- Aug.\ 2021}\\
+\textit{Postdoctoral Researcher. Supervisor: Prof.\ Edoardo M.\ Airoldi}\\
+{\small Visiting Scholar, Yale University.}
+
+{\bf Purdue University} \hfill {\em Feb.\ 2019 -- Aug.\ 2020}\\
+\textit{Postdoctoral Researcher. Supervisor: Prof.\ Patrick J.\ Wolfe}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+{\bf University College London (UCL)} \hfill {\em Feb.\ 2015 -- Feb.\ 2019}\\
+\textit{MPhil \& PhD in Statistics (Distinction)}\\
+Thesis: \textit{Sampling Designs and Robustness on Networks}. Visiting Scholar: \textit{Purdue University}.
+
+{\bf University College London (UCL)} \hfill {\em Sep.\ 2011 -- Sep.\ 2012}\\
+\textit{MSc in Machine Learning \& Computational Statistics (Distinction)}\\
+Dissertation: \textit{Time Series Models Driven by Fractional Brownian Motion}.
+
+{\bf National Technical University of Athens} \hfill {\em Sep.\ 2005 -- Jun.\ 2010}\\
+\textit{MEng \& BEng in Electrical \& Computer Engineering (Distinction)}\\
+Diploma thesis: \textit{Evaluation of Probabilistic Region Queries for Uncertain Positions of Moving Objects}.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications: Accepted, In Press, and Published}
+
+\pubtitle{Educational Intervention Can Rewire Village Social Networks} \hfill {\em 2026}\\
+\textit{(with Laura Forastiere, Edoardo M.\ Airoldi, and Nicholas A.\ Christakis)}\\
+{\small \textbf{Accepted, \emph{Nature}.}}\\
+{\small \textbf{Abstract.} Using a two-stage randomized public-health intervention in 110 remote Honduran villages (8,331 individuals), we quantify how an informational intervention alters pre-existing sociocentric networks. In low-dosage villages, treated individuals tend to sever health-advice ties with untreated alters, while in high-dosage villages treated individuals increase both inbound and outbound ties. The intervention also affects friendship and financial ties, indicating multiplex spillovers, yet aggregate village-level structure changes only modestly.}
+
+\pubtitle{Support-Safe Variational Hybrid Filtering for Contact-Mode and Sparse-Law Recovery} \hfill {\em 2026}\\
+\textit{(with Regina Ruane)}\\
+{\small \textbf{Accepted, \emph{Advances in Neural Information Processing Systems} (NeurIPS).} \myhref{https://arxiv.org/abs/2605.16398}{arXiv:2605.16398}.}
+
+\pubtitle{Social Network Structure and Depression by Gender in Rural Honduras: A Cross-Sectional Study} \hfill {\em 2026}\\
+\textit{(Selena T.\ Lee, Marios Papamichalis, Karina Raygoza-Cortez, Nicholas A.\ Christakis, and Ana Lucia Rodr\'iguez de la Rosa)}\\
+{\small \textbf{\emph{BMJ Open}, 16(6), e108285.}}
+
+\pubtitle{Probabilistic Range Monitoring of Streaming Uncertain Positions in Geosocial Networks} \hfill {\em 2012}\\
+\textit{(Kostas Patroumpas, Marios Papamichalis, and Timos Sellis)}\\
+{\small \textbf{\emph{Proceedings of SSDBM 2012}, 24th International Conference on Scientific and Statistical Database Management. Best Paper Award.}}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Manuscripts Under Review and Under Revision}
+
+\pubtitle{Bayesian Predictive Synthesis for Dynamic Networks: Forecasting and Identifying Structural Mechanisms} \hfill {\em 2026}\\
+\textit{(with Regina Ruane and Theofanis Papamichalis)}\\
+{\small \textbf{Under revision, 2nd R\&R, \emph{Journal of the American Statistical Association}.} \myhref{https://arxiv.org/abs/2606.26136}{arXiv:2606.26136}.}\\
+{\small \textbf{Abstract.} We combine competing generative models for dynamic networks through a predictive synthesis framework defined at the level of the graphon, so that forecasts are calibrated and the weights assigned to component models are interpretable as evidence for competing structural mechanisms of tie formation and dissolution.}
+
+\pubtitle{Clustering Network Formation in Populations of Networks} \hfill {\em 2026}\\
+\textit{(with Nicholas A.\ Christakis and Laura Forastiere)}\\
+{\small \textbf{Under revision, 1st R\&R, \emph{Annals of Applied Statistics}.}}\\
+{\small \textbf{Abstract.} We study inference for populations of networks with different node sets and sizes, where subsets of networks may share distinct formation regimes. Each observed network is modeled as a noisy snapshot of an underlying network, and networks are clustered jointly by a strategic formation mechanism and a measurement-error profile. We build a likelihood from a single snapshot using a meeting-and-revision equilibrium, with a finite-horizon alternative, and develop parallelizable Bayesian inference via block-updated MCMC with exchange-type updates.}
+
+\pubtitle{Decision-Theoretic Robustness for Network Models} \hfill {\em 2026}\\
+\textit{(with Regina Ruane, Swati Chandna, and Sim\'on Lunag\'omez)}\\
+{\small \textbf{Under revision, \emph{Journal of Machine Learning Research}.}}\\
+{\small \textbf{Abstract.} We develop a decision-theoretic notion of robustness for Bayesian network analysis by allowing the posterior to vary within a small Kullback--Leibler neighborhood. For exchangeable graphs, we connect robust posterior risk to graphon limits, yielding tractable sensitivity expansions for losses based on network functionals. We propose a practical computation via exponential tilting of posterior draws and illustrate the approach on brain-connectivity and village-network data.}
+
+\pubtitle{Deep Description of Static and Dynamic Network Ties in Honduran Villages} \hfill {\em 2026}\\
+\textit{(with Nikolaos Nakis and Nicholas A.\ Christakis)}\\
+{\small \textbf{Under revision, R\&R, \emph{Journal of Complex Networks}.}}
+
+\pubtitle{Network Changes in Rural Honduras: Educational Intervention via Strategic Targeting} \hfill {\em 2026}\\
+\textit{(with Laura Forastiere, Edoardo M.\ Airoldi, and Nicholas A.\ Christakis)}\\
+{\small \textbf{Under review, \emph{Journal of Complex Networks}.}}
+
+\pubtitle{Spatial Structure of Friendly and Antagonistic Ties in Honduran Villages} \hfill {\em 2026}\\
+\textit{(with Margaret L.\ Traeger and Nicholas A.\ Christakis)}\\
+{\small \textbf{Under review, \emph{Journal of Complex Networks}.}}
+
+\pubtitle{Social Factors Associated with Generalized Anxiety Disorder in Honduran Villages} \hfill {\em 2026}\\
+\textit{(with Ana Lucia Rodr\'iguez de la Rosa and Nicholas A.\ Christakis)}\\
+{\small \textbf{Under review, \emph{BMJ Open}.}}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Working Papers and Ongoing Projects}
+
+\pubtitle{Peer Effects in Repeated Cooperation:
+Evidence from 134 Honduran Villages} \hfill {\em 2026}\\
+\textit{(with Theofanis Papamichalis, Nicholas A.\ Christakis and Feng Fu)}\\
+{\small \textbf{Abstract.} Why does cooperation in real communities settle at moderate levels, neither converging to
+full cooperation nor collapsing into free-riding? We study this question in a lab-in-the-field
+experiment across 134 Honduran villages, where 2,591 participants play a ten-round publicgoods
+game in anonymous, randomly assigned groups with an undisclosed horizon, and with a
+complete pre-play friendship network. Using the experiment’s randomization, we find a moderate
+but genuine peer effect: strong enough to draw every group toward a shared interior norm
+near half the endowment, yet weak enough to leave them far from alike, so that 72 percent of
+between-group differences survive to the final round. What sets cooperative groups apart is not
+how they respond, but who is in them: the persistent gaps trace to the types each group brings
+together, not to anything that happens during play. Cooperation here is something people bring,
+not something the group creates.}
+
+\pubtitle{Latent Space Network Modelling with Hyperbolic and Spherical Geometries} \hfill {\em 2026}\\
+\textit{(with Kathryn Turnbull, Sim\'on Lunag\'omez, and Edoardo M.\ Airoldi)}\\
+{\small \textbf{Abstract.} We propose latent space network models in hyperbolic and spherical geometries to capture non-Euclidean structure in relational data. We address identifiability by characterizing which latent representations are recoverable from observed links and by imposing constraints that resolve non-identifiability. We develop Bayesian estimation procedures, both MCMC and variational, tailored to each geometry, and evaluate the models on real networks.}
+
+\pubtitle{Forgetting Friends and Foes: Self-Reported Errors in Sociocentrically Mapped Village Networks}\\
+\textit{(with Ana Lucia Rodr\'iguez de la Rosa, Karina Raygoza-Cortez, and Nicholas A.\ Christakis)}
+
+\pubtitle{The Association of Friends and Family Social Networks on Wife-Beating Beliefs in Rural Honduras}\\
+\textit{(with Ana Karina Raygoza-Cortez, Wynne Williams-Ceci, Nicholas A.\ Christakis, Rafael Cardenas Heredia, and Ana Lucia Rodr\'iguez de la Rosa)}
+
+\pubtitle{DeFi Statistical Network Analysis (Ethereum and On-Chain Networks)}\\
+\textit{(with Leandros Tassioulas and collaborators, Yale University)}\\
+{\small Comparative study of network evolution, structural breaks, and fragility across DeFi protocols and market regimes.}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Awards \& Honors}
+{\bf Best Paper Award, SSDBM 2012} \hfill {\em 2012}\\
+{\small K.\ Patroumpas, M.\ Papamichalis, T.\ Sellis, ``Probabilistic Range Monitoring of Streaming Uncertain Positions in Geosocial Networks,'' 24th International Conference on Scientific and Statistical Database Management, Chania, Crete, Greece.}\\
+{\bf Cloudera Developer Training for Apache Spark (funded by UCL)} \hfill {\em 2015}\\
+{\bf Gold Medal, Balkan Mathematical Olympiad} \hfill {\em 2005}\\
+{\bf Bronze Medal, International Mathematical Olympiad (IMO)} \hfill {\em 2004}\\
+{\bf Bronze Medal, Balkan Mathematical Olympiad} \hfill {\em 2004}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Teaching Summary}
+My teaching emphasizes clarity, intuition, and hands-on practice. I use active learning through worked examples, coding labs, and small-group problem solving, together with frequent low-stakes feedback and project-based assessment, to help students connect statistical theory to real data and to modern scientific questions.
+\end{rSection}
+
+\begin{rSection}{Teaching Experience}
+
+{\bf Guest Lecturer:} \textit{STAT 4750/9200, Sample Survey Methods} \hfill {\em Nov.\ 11, 2025}\\
+\textit{The Wharton School, University of Pennsylvania}\\
+{\small Lecture and paper presentation: ``Educational Intervention Can Rewire Village Social Networks'' (with L.\ Forastiere, E.\ M.\ Airoldi, and N.\ A.\ Christakis).}
+
+{\bf Teaching Assistant:} \textit{Causal Inference (graduate level)} \hfill {\em 2020 -- 2021}\\
+\textit{Temple University, with Prof.\ Edoardo M.\ Airoldi}
+
+{\bf Teaching Assistant / Course Support:} \textit{Machine Learning I} \hfill {\em 2019 -- 2020}\\
+\textit{Purdue University}
+
+{\bf Teaching Assistant:} \textit{Further Probability and Statistics} \hfill {\em Oct.\ 2017 -- Dec.\ 2017}\\
+\textit{University College London}
+
+{\bf Teaching Assistant:} \textit{Introduction to Statistical Methods and Computing (MPhil)} \hfill {\em Oct.\ 2016 -- Dec.\ 2016}\\
+\textit{University College London}
+
+{\bf Additional UCL teaching assistantships:} \textit{Probability and Statistics II (2nd year), Optimization Algorithms in Operational Research (2nd year), Statistical Inference (3rd year), Forecasting (3rd year).}
+
+{\bf Assistant Teacher:} \textit{Mathematics (high school)} \hfill {\em Oct.\ 2006 -- May 2007}\\
+\textit{Athens College High School, Filothei, Athens, Greece}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Mentoring}
+Research mentoring of doctoral and postdoctoral researchers at the Human Nature Lab, Yale University, on study design, statistical and causal methodology, reproducible computation, and scientific writing. Co-authorship and supervision on the Honduras network studies listed above.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Conference \& Workshop Presentations}
+
+{\bf Joint Statistical Meetings (JSM)} \hfill {\em 2019, 2022--2025}
+\begin{itemize}
+\item \textit{JSM 2025 (Nashville, TN), ``Statistics, Data Science, and AI Enriching Society'' (Aug.\ 2--7, 2025).}\\
+\hspace*{1em}\textit{Poster: ``Wavelet Latent Position Exponential Random Graphs'' (M.\ Papamichalis, R.\ Ruane).}
+\item \textit{JSM 2024 (Portland, OR), ``Statistics and Data Science: Informing Policy and Countering Misinformation'' (Aug.\ 3--8, 2024).}\\
+\hspace*{1em}\textit{Poster: ``Decision-Theoretic Robustness for Network Models'' (M.\ Papamichalis, R.\ Ruane, S.\ Lunag\'omez, S.\ Chandna).}
+\item \textit{JSM 2023 (Toronto, ON, Canada), ``One Community: Informing Decisions and Driving Discovery'' (Aug.\ 5--10, 2023).}\\
+\hspace*{1em}\textit{Poster: ``State-Space Modeling of Time-Varying Spillovers on Networks'' (M.\ Papamichalis, R.\ Ruane).}
+\item \textit{JSM 2022 (Washington, DC), ``Statistics: A Foundation for Innovation'' (Aug.\ 6--11, 2022).}\\
+\hspace*{1em}\textit{Poster: ``Graphon-Level Bayesian Predictive Synthesis for Random Networks'' (M.\ Papamichalis, R.\ Ruane).}
+\item \textit{JSM 2019 (Denver, CO), ``Statistics: Making an Impact'' (Jul.\ 27--Aug.\ 1, 2019).}\\
+\hspace*{1em}\textit{Poster: ``CoLaS: Copula-Seeded Sparse Local Graphs with Tunable Assortativity, Persistent Clustering, and a Degree-Tail Dichotomy'' (M.\ Papamichalis, R.\ Ruane, T.\ Papamichalis).}
+\end{itemize}
+
+{\bf Sunbelt 2025, International Network for Social Network Analysis} \hfill {\em Jun.--Jul.\ 2025}\\
+\textit{Paris, France.}
+\begin{itemize}
+\item \textit{Paper: ``Forgetting Friends and Foes: Self-Reported Errors in Sociocentrically Mapped Village Networks'' (with A.\ L.\ Rodr\'iguez de la Rosa, K.\ Raygoza-Cortez, and N.\ A.\ Christakis).}
+\item \textit{Paper: ``The Association of Friends and Family Social Networks on Wife-Beating Beliefs in Rural Honduras'' (with A.\ K.\ Raygoza-Cortez, W.\ Williams-Ceci, N.\ A.\ Christakis, R.\ Cardenas Heredia, and A.\ L.\ Rodr\'iguez de la Rosa).}
+\end{itemize}
+
+{\bf Novel AI \& Data for Disaster Management Workshop} \hfill {\em Jul.\ 31, 2025}\\
+\textit{Hosted by the Computational Social Science Lab, University of Pennsylvania, with Meta AI for Good and Direct Relief's CrisisReady initiative. Philadelphia, PA.}\\
+\hspace*{1em}\textit{Paper: ``Group Cooperation Diverges onto Durable Low versus High Paths: Public Goods Experiments in 134 Honduran Villages'' (with N.\ A.\ Christakis and F.\ Fu).}
+
+{\bf Workshop on the Frontiers in Data Science} \hfill {\em Jan.\ 2020}\\
+\textit{Keio University, Tokyo, Japan.}\\
+\hspace*{1em}\textit{Paper: ``Collapsed Structured Block Models for Community Detection in Complex Networks'' (M.\ Papamichalis, R.\ Ruane).}
+
+{\bf International Conference on Scientific and Statistical Database Management (SSDBM)} \hfill {\em Jun.\ 25--27, 2012}\\
+\textit{Chania, Crete, Greece. Best Paper Award.}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Industry Experience}
+
+{\bf Wells Fargo, Quantitative Strategy (Corporate \& Investment Banking)} \hfill {\em Dec.\ 2020 -- Jun.\ 2023}\\
+\textit{Quantitative Analyst (part-time), Manhattan, NY (hybrid)}\\
+{\small Developed trading strategies for volume prediction using dynamic linear models and hierarchical models for market distress detection, conducted order book distribution analyses, and developed key indicators to uncover activity in dark pools.}
+
+{\bf Meta (Facebook)} \hfill {\em May 2018 -- Aug.\ 2018}\\
+\textit{Statistician (contract), San Francisco Bay Area (hybrid)}\\
+{\small Analyzed observational data to support decision-making in uncertain causal contexts, using causal inference frameworks including structural causal models.}
+
+{\bf Kiwi Power} \hfill {\em Apr.\ 2016 -- Jul.\ 2016}\\
+\textit{Data Scientist (part-time), London, UK (hybrid)}\\
+{\small Applied machine learning and econometric methods in R to predict client behavior, migrated data from SQL to MongoDB, and built interactive visualizations and dashboards in R Shiny.}
+
+{\bf The Outside View} \hfill {\em Aug.\ 2014 -- Nov.\ 2015}\\
+\textit{Data Scientist (full-time), London, UK}\\
+{\small Applied machine learning and statistical methods to problems in real estate, automotive markets, and recruitment, and developed end-to-end analytics solutions in Python with web and cloud tooling.}
+
+{\bf Product Madness} \hfill {\em Feb.\ 2014 -- Aug.\ 2014}\\
+\textit{Data Scientist (full-time), London, UK}\\
+{\small Implemented predictive analytics models in Python, applied imbalance-handling methods, conducted A/B tests to optimize engagement and revenue, and built analytics dashboards with MySQL, AWS, Tableau, and D3.js.}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Technical Skills}
+\textbf{Programming:} Python, R, Stan, Julia, MATLAB, C/C++, Java, SQL, JavaScript.\\
+\textbf{Statistical and ML modeling:} Bayesian modeling, MCMC, variational inference, scikit-learn, TensorFlow, PyTorch.\\
+\textbf{Large-scale computing:} Hadoop, Spark, high-performance computing clusters.\\
+\textbf{Other:} Stata, SAS, SPSS, \LaTeX, Git, R Shiny.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Languages}
+{\bf English:} Fluent \quad {\bf Greek:} Native \quad {\bf Spanish:} Professional working proficiency
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% OPTIONAL SECTION. Search committees in QMMS look for service. Uncomment and fill in
+% with your actual reviewing record and memberships, then delete this comment.
+%
+% \begin{rSection}{Professional Service}
+% \textbf{Journal and conference reviewing:} [list journals and conferences].\\
+% \textbf{Professional memberships:} [list societies].
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{References}
+\begin{multicols}{2}
+\raggedcolumns
+
+\begin{minipage}[t]{\linewidth}
+\textbf{Prof.\ Nicholas A.\ Christakis}\\
+Yale University\\
+Sterling Professor of Social and Natural Science\\
+\Telefon\ +1 (978) 760-2945\\
+\Letter\ \href{mailto:nicholas.christakis@yale.edu}{nicholas.christakis@yale.edu}
+\end{minipage}\par\medskip
+
+\begin{minipage}[t]{\linewidth}
+\textbf{Prof.\ Laura Forastiere}\\
+Yale University\\
+Associate Professor of Biostatistics\\
+350 George Street, New Haven, CT 06511\\
+\Telefon\ \textbf{[INSERT PHONE]}\\
+\Letter\ \href{mailto:laura.forastiere@yale.edu}{laura.forastiere@yale.edu}
+\end{minipage}\par\medskip
+
+\begin{minipage}[t]{\linewidth}
+\textbf{Prof.\ Edoardo M.\ Airoldi}\\
+Temple University\\
+Millard E.\ Gladfelter Professor and Chair,\\
+Fox School of Business and Management\\
+\Telefon\ +1 (215) 204-3505\\
+\Letter\ \href{mailto:airoldi@temple.edu}{airoldi@temple.edu}
+\end{minipage}\par\medskip
+
+\begin{minipage}[t]{\linewidth}
+\textbf{Prof.\ Patrick J.\ Wolfe}\\
+Purdue University\\
+Provost, Miller Family Professor of Statistics\\
+and Computer Science\\
+\Telefon\ +1 (765) 494-1730\\
+\Letter\ \href{mailto:patrick@purdue.edu}{patrick@purdue.edu}
+\end{minipage}\par\medskip
+
+\begin{minipage}[t]{\linewidth}
+\textbf{Prof.\ Feng Fu}\\
+Dartmouth College\\
+Departments of Biomedical Data Science and Mathematics\\
+Kemeny Hall, Room 210, HB 6188\\
+\Telefon\ +1 (603) 646-2293\\
+\Letter\ \href{mailto:Feng.Fu@dartmouth.edu}{Feng.Fu@dartmouth.edu}
+\end{minipage}\par\medskip
+
+\begin{minipage}[t]{\linewidth}
+\textbf{Prof.\ Alex Beskos}\\
+University College London\\
+Department of Statistical Science\\
+\Telefon\ +44 (0)20 7679 8352\\
+\Letter\ \href{mailto:a.beskos@ucl.ac.uk}{a.beskos@ucl.ac.uk}
+\end{minipage}
+
+\end{multicols}
+\end{rSection}
+
+\end{document}

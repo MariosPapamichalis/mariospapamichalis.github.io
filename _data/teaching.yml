@@ -1,0 +1,39 @@
+# Teaching record, newest first.
+- role: "Guest Lecturer"
+  course: "STAT 4750/9200, Sample Survey Methods"
+  institution: "The Wharton School, University of Pennsylvania"
+  period: "November 11, 2025"
+  detail: >
+    Lecture and paper presentation: "Educational Intervention Can Rewire Village Social
+    Networks" (with L. Forastiere, E. M. Airoldi, N. A. Christakis).
+
+- role: "Teaching Assistant"
+  course: "Causal Inference (graduate level)"
+  institution: "Temple University"
+  period: "2020-2021"
+  detail: "With Prof. Edoardo M. Airoldi."
+
+- role: "Teaching Assistant / Course Support"
+  course: "Machine Learning I"
+  institution: "Purdue University"
+  period: "2019-2020"
+
+- role: "Teaching Assistant"
+  course: "Further Probability and Statistics"
+  institution: "University College London"
+  period: "October - December 2017"
+
+- role: "Teaching Assistant"
+  course: "Introduction to Statistical Methods and Computing (MPhil)"
+  institution: "University College London"
+  period: "October - December 2016"
+
+- role: "Teaching Assistant"
+  course: "Probability and Statistics II, Optimization Algorithms in Operational Research, Statistical Inference, Forecasting"
+  institution: "University College London"
+  period: "2015-2018"
+
+- role: "Assistant Teacher"
+  course: "Mathematics (high school)"
+  institution: "Athens College High School, Filothei, Athens, Greece"
+  period: "October 2006 - May 2007"
